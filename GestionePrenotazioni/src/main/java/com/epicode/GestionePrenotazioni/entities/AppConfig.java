@@ -1,21 +1,14 @@
 package com.epicode.GestionePrenotazioni.entities;
 
-import com.github.javafaker.Faker;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-
-import java.util.Locale;
 
 @Configuration
 @PropertySource("application.properties")
 public class AppConfig {
 
-    Faker faker = new Faker(Locale.ITALY);
-    @Bean(name = "utente")
-    public Utente utenteRandom(){
-        return new Utente(faker.name().username(), faker.name().firstName(), faker.name().lastName(), faker.internet().emailAddress());
-    }
+
 
     @Bean(name = "edificio_milano")
     public Edificio edificioMilano(){
