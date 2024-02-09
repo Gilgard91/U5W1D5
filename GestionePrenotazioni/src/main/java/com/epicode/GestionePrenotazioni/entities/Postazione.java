@@ -18,7 +18,7 @@ public class Postazione {
     private Long id;
 
     @Column(name = "codice_univoco")
-    private String codice;
+    private int codice;
 
     private String descrizione;
 
@@ -33,7 +33,7 @@ public class Postazione {
     @JoinColumn(name = "edificio_id")
     private Edificio edificio;
 
-    public Postazione(String codice, String descrizione, TipoPostazione tipoPostazione, int numeroMaxOccupanti, Edificio edificio) {
+    public Postazione(int codice, String descrizione, TipoPostazione tipoPostazione, int numeroMaxOccupanti, Edificio edificio) {
         this.codice = codice;
         this.descrizione = descrizione;
         this.tipoPostazione = tipoPostazione;
