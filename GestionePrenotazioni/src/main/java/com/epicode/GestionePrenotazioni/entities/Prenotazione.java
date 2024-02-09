@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @ToString
+@Table(name = "prenotazioni")
 public class Prenotazione {
 
     @Id

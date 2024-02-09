@@ -39,12 +39,12 @@ public class AppConfig {
 
     @Bean(name = "postazione_roma")
     public Postazione postazioneRoma(){
-        return new Postazione(747, "Openspace spazioso della sede Facebook di Roma", TipoPostazione.OPENSPACE, 50, edificioRoma());
+        return new Postazione(747, "Openspace della sede Facebook di Roma", TipoPostazione.OPENSPACE, 50, edificioRoma());
     }
 
     @Bean(name = "postazione_torino")
     public Postazione postazioneTorino(){
-        return new Postazione(123, "Ufficio privato della sede Tik Tok di Torino", TipoPostazione.PRIVATO, 4, edificioTorino());
+        return new Postazione(123, "Ufficio privato della sede Tik Tok di Torino", TipoPostazione.PRIVATO, 5, edificioTorino());
     }
 
 

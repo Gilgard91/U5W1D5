@@ -11,6 +11,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
+@Table(name = "postazioni")
 public class Postazione {
 
     @Id
